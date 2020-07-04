@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <!-- page icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- my stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+  <title>rock-paper-scissors</title>
+
+</head>
+<body>
+  <div class="row title container purple darken-4 ">
+      <div class="col s6  ">
+       <img src="../images/logo.svg" alt="rock-paper-scissors">
+      </div>
+      <div class="col s6">
+        <img src="../images/title1.png" class="right" height="150" width="150" alt="rock-paper-scissors">
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="center-align row">
+      <div id="rock" class="img rock white col s3 offset-s2">
+        <img src="../images/icon-rock.svg" alt="rock">
+      </div>
+      <div id="paper" class="img paper white col s3 offset-s2">
+        <img src="../images/icon-paper.svg" alt="paper">
+      </div>
+    </div>
+    <div class="center-align row">
+      <div id="scissors" class="img scissors white col s3 offset-s4">
+        <img src="../images/icon-scissors.svg" alt="scissors">
+      </div>
+    </div>
+    <div class=" center row">
+        <p id="reason"></p>
+        <h4 id="turn"></h4>
+      <div class="col s4">
+        <h5 id='player1' class="white-text right"></h5>
+        <div id="homePicked" class="right">
+          <div class="img white"></div>
+        </div>
+      </div>
+      <div class="col s4">
+        <h5 id="winner" class="white-text"></h5>
+        <p class="btn purple lighten-1"><span id="home">0</span> - <span id="away">0</span></p>
+      </div>
+      <div class="col s4">
+        <h5 id='player2' class="white-text"></h5>
+        <div id="awayPicked">
+          <div class="img white"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <a href="#rules" class="btn  indigo lighten-2 modal-trigger">rules</a>
+      <div class="bgrad modal center-align" id="rules">
+        <div class="modal-content">
+          <h4 class="title blue darken-2">RULES</h4>
+          <img src="../images/image-rules.svg" alt="rules">
+        </div>
+        <div class="bgrad modal-footer">
+          <a href="#" class="modal-close btn  indigo lighten-2">close</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">b'little</a>.
+    </div>
+
+  </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script type="module" src="scriptRps.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	  
+	  <!-- page icon -->
+	  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
+	  <!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	  <!-- my stylesheet -->
+	  <link rel="stylesheet" href="../style.css">
+	  <title>result</title>
+	</head>
+	<body>
+		<div class="pentagon">
+			<div class="container center">
+				
+	<!-- announcement -->
+				<div class="announcement">
+					<h1 id='result'></h1>
+					<h5 id="explanation" class=""></h5>
+				</div>
+			
+	<!-- result table is displayed here -->
+			<div class="result card transparent">
+				<table class="">
+					<thead class="">
+					<tr>
+						<th>PLAYER</th>
+						<th>POINTS</th>
+					</tr>
+					</thead>
+					<tbody id="table"></tbody>
+				</table>
+			</div>
+			
+	<!-- links -->
+			<ul class="">
+				<li class="btn indigo lighten-2" onclick="toIndex()">HOME</li>
+				<li class="btn indigo lighten-2" onclick="toRps()">RPS</li>
+				<li class="btn indigo lighten-2" onclick="toRpsls()">RPSLS</li>
+			</ul>
+		</div>
+		<div class="attribution">
+	      Coded by <a href="#">b'little</a>.
+	    </div>
+		</div>
+
+		<script src="result.js"></script>
+	</body>
+</html>

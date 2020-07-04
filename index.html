@@ -1,0 +1,133 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+ <!-- page icon -->
+  	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+	<!-- fonts -->
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed">
+  	<!-- materialize icon -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- title -->
+	<title>haparzard</title>
+</head>
+<body>
+	<!-- navbar -->
+	<header>
+	<nav class="title nav-wrapper transparent">
+	<div class="container">
+	<a href="#" class="brand-logo">
+		<h2 class="haphazard center">Haphazard</h2>
+	<a href="#" class="sidenav-trigger" data-target="mySidenav">
+	    <i class="material-icons">menu</i>
+	</a>
+	<ul class="right hide-on-med-and-down">
+	    <li><a href="#rps">RPS</a></li>
+	    <li><a href="#rpsls">RPSLS</a></li>
+	    <li><a href="#about">About</a></li>
+	    <li><a href="#contact">Contact</a></li>
+
+	<!-- sidenav -->
+	</ul>
+	<ul class="sidenav" id="mySidenav">
+	    <li><a href="#rps">RPS</a></li>
+	    <li><a href="#rpsls">RPSLS</a></li>
+	    <li><a href="#about">About</a></li>
+	    <li><a href="#contact">Contact</a></li>
+	</ul>
+	</div>
+	</nav>
+	</header>
+
+	<!-- about -->
+	<section class="container">
+		<h4 id="about" class="scrollspy">We are still coming up with new games. But until then, why don't you take your time and enjoy these</h4>
+	</section>
+
+	<section class="container games">
+		<div id="rps" class="scrollspy card">
+			<div class="card-content">
+				<span class="card-title">
+					ROCK PAPER SCISSORS
+				</span>
+				<div class="row">
+					<div class="col s12 m6">
+						<p>The rules are simple, Scissors cuts paper, paper covers rock, and rock crushes scissors. <br>
+						Everything else is a stalemate</p>
+					</div>
+					<div class="col s12 m6">
+	                  <div class="input-field">
+	                  	<input type="text" id="rpsPlayer1" required>
+	                    <label for="rpsPlayer1">Player1</label>
+	                    <p id="rpsPlayer1Label" class="red-text"></p>
+	                  </div>
+	                  <div class="input-field">
+	                  	<input type="text" id="rpsPlayer2">
+	                    <label for="rpsPlayer2">Player2 : no input here means you play with computer</label>
+	                  </div>
+	                  <div class="range-field">
+	                    <input type="range" id="rpsRepeat" min="1" max="100">
+	                    <label for="rpsRepeat">Number of Repeats</label>
+	                  </div>
+	                  
+	                      <button id="rpsBtn" class="btn">Play RPS</button>
+	                  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="rpsls" class="scrollspy card">
+			<div class="card-content">
+				<span class="card-title">
+					ROCK PAPER SCISSORS LIZARD SPOCK
+				</span>
+				<div class="row">
+					<div class="col s12 m6">
+						<p>The rules are simple As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."<br>Everything else is a stalemate</p>
+					</div>
+					<div class="col s12 m6">
+	                  <div class="input-field">
+	                  	<input type="text" id="rpslsPlayer1" required>
+	                    <label for="rpslsPlayer1">Player1</label>
+	                    <p id="rpslsPlayer1Label" class="red-text"></p>
+	                  </div>
+	                  <div class="input-field">
+	                  	<input type="text" id="rpslsPlayer2">
+	                    <label for="rpslsPlayer2">Player2 : no input here means you play with computer</label>
+	                  </div>
+	                  <div class="range-field">
+	                    <input type="range" id="rpslsRepeat" min="1" max="100">
+	                    <label for="rpslsRepeat">Number of Repeats</label>
+	                  </div>
+	                  
+	                      <button id="rpslsBtn" class="btn">Play RPSLS</button>
+	                  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+		<div class="attribution">
+	      Coded by <a href="#">b'little</a>.
+	    </div>
+	</div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
