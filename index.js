@@ -36,36 +36,23 @@ const handleLoad=_=> {
 
 const handlePlay=(game)=> {
     if(game==='rps'){
-        if(rpsPlayer1.value){
-            let rpsP1 = rpsPlayer1.value
-            let rpsP2 = rpsPlayer2.value
-            //if empty it gives it a value of 'computer'
-            if(!rpsP2){rpsP2='Computer'}
-            let rpsR = rpsRepeat.value
-            sessionStorage.setItem('rpsP1',rpsP1)
-            sessionStorage.setItem('rpsP2',rpsP2)
-            sessionStorage.setItem('rpsR',rpsR)
-            // tekes you to the game
-            window.location.assign('rps/rps.html')
-        }else{
-            rpsPlayer1Label.innerHTML='please fill this in to begin'
-        }
+        let rpsP1 = rpsPlayer1.value
+        let rpsP2 = rpsPlayer2.value
+        let rpsR = rpsRepeat.value
+        sessionStorage.setItem('rpsP1',rpsP1)
+        sessionStorage.setItem('rpsP2',rpsP2)
+        sessionStorage.setItem('rpsR',rpsR)
+        // takes you to the game
+        window.location.assign('rps/rps.html')
     }else if(game==='rpsls'){
-        if(rpslsPlayer1.value){
-
-            let rpslsP1 = rpslsPlayer1.value
-            let rpslsP2 = rpslsPlayer2.value
-            //if empty it gives it a value of 'computer'
-            if(!rpslsP2){rpslsP2='Computer'}
-            let rpslsR = rpslsRepeat.value
-            sessionStorage.setItem('rpslsP1',rpslsP1)
-            sessionStorage.setItem('rpslsP2',rpslsP2)
-            sessionStorage.setItem('rpslsR',rpslsR)
-            // tekes you to the game
-            window.location.assign('rpsls/rpsls.html')
-        }else{
-            rpslsPlayer1Label.innerHTML='please fill this in to begin'
-        }
+        let rpslsP1 = rpslsPlayer1.value
+        let rpslsP2 = rpslsPlayer2.value
+        let rpslsR = rpslsRepeat.value
+        sessionStorage.setItem('rpslsP1',rpslsP1)
+        sessionStorage.setItem('rpslsP2',rpslsP2)
+        sessionStorage.setItem('rpslsR',rpslsR)
+        // takes you to the game
+        window.location.assign('rpsls/rpsls.html')
     }
 }
 

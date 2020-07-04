@@ -12,7 +12,6 @@ export class ShowOfHands extends Games {
 	}
 
 	handleRest=()=>{
-
 		let result=this.result()
 		this.handlePoints(result[1])
 		player1.innerHTML=`${this.players[0].playerName} picked`
@@ -25,6 +24,13 @@ export class ShowOfHands extends Games {
 		away.innerHTML=this.players[1].points
 		this.playersChoice = ['','']
 		this.checkTarget()
+
+		setTimeout(_=>{
+		player1.innerHTML=``
+		player2.innerHTML=``
+				homePicked.innerHTML=`<div class="img white"></div>`
+				awayPicked.innerHTML=`<div class="img white"></div>`
+			},2000)
 	}
 
 	handleChoice=(value)=>{
@@ -36,16 +42,15 @@ export class ShowOfHands extends Games {
 				this.handleRest()
 				turn.innerHTML=`${this.players[0].playerName}'s turn`
 			},1000)				
-			}else{
-		if(this.playersChoice[0] ===''){
-			this.playersChoice[0] = value
-			turn.innerHTML=`${this.players[1].playerName}'s turn`
-
 		}else{
-			this.playersChoice[1]= value
-			this.handleRest()
-			turn.innerHTML=`${this.players[0].playerName}'s turn`
-		}
-	}
+			if(this.playersChoice[0] ===''){
+				this.playersChoice[0] = value
+				turn.innerHTML=`${this.players[1].playerName}'s turn`
+			}else{
+				this.playersChoice[1]= value
+				this.handleRest()
+				turn.innerHTML=`${this.players[0].playerName}'s turn`
+			}
+		}	
 	}
 }
