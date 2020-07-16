@@ -7,4 +7,4 @@ presently it includes two games
 2. rock paper scissors lizard spock
 
 
-view site on https://samuelbukoye.github.io/haphazard/
+view site on https://blittle-haphazard.netlify.app
