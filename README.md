@@ -5,3 +5,6 @@ presently it includes two games
 
 1. rock paper scissors 
 2. rock paper scissors lizard spock
+
+
+view site on https://samuelbukoye.github.io/haphazard/
